@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0">UserName:</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0">Password:</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        <Label Grid.Row="3" Grid.ColumnSpan="2" Visibility="{Binding isAuthenticated, Converter={StaticResource BoolToVis}}">
+            User has been authenticated
+        </Label>
+        <Button Grid.Row="2" Grid.Column="1" Content="Authenticate" Command="{Binding LoginCommand}" Margin="3" Width="100" HorizontalAlignment="Right" />
     </Grid>
 </Window>

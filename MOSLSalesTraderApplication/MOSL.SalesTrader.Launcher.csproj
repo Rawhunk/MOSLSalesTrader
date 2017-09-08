@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Modules\Login\LoginViewModel.cs" />
     <Compile Include="Resource\NameMapping.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

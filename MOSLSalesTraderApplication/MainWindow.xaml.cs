@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MOSLSalesTraderApplication.Modules.Login;
 
 namespace MOSLSalesTraderApplication
 {
@@ -23,6 +24,19 @@ namespace MOSLSalesTraderApplication
         public MainWindow()
         {
             InitializeComponent();
+            this.Login = new LoginViewModel();
+        }
+
+        public LoginViewModel Login
+        {
+            get
+            {
+                return this.DataContext as LoginViewModel;
+            }
+            set
+            {
+                this.DataContext = value;
+            }
         }
     }
 }
