@@ -1,9 +1,22 @@
-﻿<Application x:Class="MOSLSalesTraderApplication.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+﻿<Application x:Class="MOSLSalesTraderApplication.App" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
              xmlns:local="clr-namespace:MOSLSalesTraderApplication"
-             StartupUri="MainWindow.xaml">
+             StartupUri="test.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/System.Windows.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Controls.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Controls.Chart.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Controls.Input.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Controls.Data.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Controls.Docking.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Documents.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Documents.Proofing.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Expression_Dark;component/Themes/Telerik.Windows.Controls.GridView.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

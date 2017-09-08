@@ -44,10 +44,10 @@ namespace MOSLSalesTraderApplication.Modules.Login
             }
         }
 
-        public ICommand LoginCommand
-        {
-            get { return new RelayCommand(() => Login()); }
-        }
+        //public ICommand LoginCommand
+        //{
+        //    get { return new RelayCommand(() => Login()); }
+        //}
 
         public void Login()
         {

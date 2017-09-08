@@ -19,24 +19,24 @@ namespace MOSLSalesTraderApplication
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : UserControl
     {
         public MainWindow()
         {
             InitializeComponent();
-            this.Login = new LoginViewModel();
+            //this.Login = new LoginViewModel();
         }
 
-        public LoginViewModel Login
-        {
-            get
-            {
-                return this.DataContext as LoginViewModel;
-            }
-            set
-            {
-                this.DataContext = value;
-            }
-        }
+        //public LoginViewModel Login
+        //{
+        //    get
+        //    {
+        //        return this.DataContext as LoginViewModel;
+        //    }
+        //    set
+        //    {
+        //        this.DataContext = value;
+        //    }
+        //}
     }
 }
