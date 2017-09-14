@@ -23,10 +23,21 @@ namespace MOSLSalesTraderApplication
                 radWindow.Height = 300;
                 radWindow.Content = new MainWindow();
                 radWindow.Header = "Login";
-                radWindow.Owner = Application.Current.MainWindow;
+                radWindow.Owner = Current.MainWindow;
                 radWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
                 radWindow.ResizeMode = ResizeMode.NoResize;
                 radWindow.ShowDialog();
+
+                //var radWindow = new MainWindow();
+                //radWindow.Width = 400;
+                //radWindow.Height = 300;
+                ////radWindow.Content = new MainWindow();
+                //radWindow.Header = "Login";
+                //radWindow.Owner = Application.Current.MainWindow;
+                //radWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                //radWindow.ResizeMode = ResizeMode.NoResize;
+                //radWindow.Show();
+
             }
             catch (Exception ex)
             {

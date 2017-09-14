@@ -4,8 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MOSLSalesTraderApplication"
+        xmlns:login="clr-namespace:MOSLSalesTraderApplication.ViewModel"
         mc:Ignorable="d"
         Height="350" Width="525">
+
+    <UserControl.DataContext>
+        <login:LoginViewModel />
+    </UserControl.DataContext>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
@@ -27,6 +33,10 @@
         <!--<Label Grid.Row="3" Grid.ColumnSpan="2" Visibility="{Binding isAuthenticated, Converter={StaticResource BoolToVis}}">
             User has been authenticated
         </Label>-->
-        <Button Grid.Row="3" Grid.Column="2" Margin="5,5,45,5" Content="Authenticate" Command="{Binding LoginCommand}" Width="100" HorizontalAlignment="Left" />
+        <Button Grid.Row="3" Grid.Column="2" Margin="5,5,45,5" 
+                Content="Authenticate" 
+                Command="{Binding CancelCommand}"
+                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                Width="100" HorizontalAlignment="Left" />
     </Grid>
 </UserControl>

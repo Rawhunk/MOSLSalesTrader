@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MOSLSalesTraderApplication.Modules.Login;
+using Telerik.Windows.Controls;
 
 namespace MOSLSalesTraderApplication
 {
@@ -23,20 +24,20 @@ namespace MOSLSalesTraderApplication
     {
         public MainWindow()
         {
-            InitializeComponent();
-            //this.Login = new LoginViewModel();
+            InitializeComponent();           
         }
 
-        //public LoginViewModel Login
+        //private void btnAuthenticate_Click(object sender, RoutedEventArgs e)
         //{
-        //    get
-        //    {
-        //        return this.DataContext as LoginViewModel;
-        //    }
-        //    set
-        //    {
-        //        this.DataContext = value;
-        //    }
+        //    MarketWatch te = new MarketWatch();
+        //    te.Show();
+
+        //    UIElement elelemnt = new UIElement();
+
+        //    RadWindow window = elelemnt.GetVisualParent<RadWindow>();
+        //    window.Close();
+        //    //window.Show();
+
         //}
     }
 }
